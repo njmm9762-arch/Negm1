@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<title>PUBG VOICE PRO – Frontend Only</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="neon">
+<header>
+  <div class="logo">PUBG VOICE 🔥</div>
+  <div id="fps">FPS: 0</div>
+</header>
 
+<div class="effects"><div class="fire"></div><div class="smoke"></div></div>
+
+<main>
+<section class="panel">
+  <textarea id="text" placeholder="اكتب النص..."></textarea>
+  <select id="lang">
+    <option value="ar-EG">ar-EG</option>
+    <option value="ar-SA">ar-SA</option>
+    <option value="en-US">en-US</option>
+  </select>
+  <select id="voice"></select>
+  <button id="play">PLAY</button>
+  <button id="record">RECORD</button>
+  <button id="save">SAVE FILE</button>
+</section>
+
+<section class="panel avatar">
+  <canvas id="avatar" width="300" height="300"></canvas>
+</section>
+
+<section class="panel settings">
+  <select id="theme">
+    <option value="neon">NEON</option>
+    <option value="red">RED</option>
+    <option value="gold">GOLD</option>
+  </select>
+  <input type="range" id="power" min="0" max="100" value="50" />
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
